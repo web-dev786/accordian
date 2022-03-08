@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    color: #24305f;
+
+}
+
+body{
+    background: #fffdfb;
+}
+
+.accordian{
+    width: 50%;
+    margin: 200px auto;
+    display: flex;    
+    flex-direction: column;
+    gap: 25px;
+}
+
+.items{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 35px;
+    padding: 30px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.number{
+    font-size: 30px;
+    color: #162768;
+}
+h2{
+    font-size: 25px;
+    color: #162768;
+    text-transform: capitalize;
+}
+
+.icon-close{
+    display: none;
+}
+
+.hidden{
+    font-size: 20px;
+    grid-column: 2/3;
+    display: none;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.active .hidden{
+    display: block;
+}
+.active .icon-plus{
+    display: none;
+}
+.active .icon-close{
+    display: block;
+}
